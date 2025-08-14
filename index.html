@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Personal Blog Homepage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Blog Title -->
+  <header>
+    <h1>My Personal Blog</h1>
+  </header>
+
+  <!-- Filters and Search -->
+  <div class="controls">
+    <div>
+      <button class="filter-btn" data-category="All">All</button>
+      <button class="filter-btn" data-category="Tech">Tech</button>
+      <button class="filter-btn" data-category="Travel">Travel</button>
+      <button class="filter-btn" data-category="Food">Food</button>
+      <button class="filter-btn" data-category="Sports">Sports</button>
+    </div>
+    <div>
+      <img src="images/search-interface-symbol.png" alt="Search" width="16">
+      <input type="text" id="searchInput" placeholder="Search by title...">
+    </div>
+  </div>
+
+  <!-- Blog Posts Container -->
+  <div id="postsContainer"></div>
+
+  <!-- Pagination -->
+  <div id="pagination"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

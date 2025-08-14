@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #400096;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: white;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    margin: 5px;
+    padding: 8px 12px;
+    background: #ddd;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+#searchInput {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/* Posts */
+#postsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.post-card {
+    background: white;
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-card .content {
+    padding: 10px;
+}
+
+.post-card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.post-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Pagination */
+#pagination {
+    text-align: center;
+    padding: 15px;
+}
+
+#pagination button {
+    margin: 3px;
+    padding: 6px 10px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#pagination button:hover {
+    background: grey;
+}
+
+#pagination button.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .post-card {
+        width: 45%;
+    }
+}
+
+/* Responsive for mobile */
+@media (max-width: 500px) {
+    .post-card {
+        width: 100%;
+    }
+}
